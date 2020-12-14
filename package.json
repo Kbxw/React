@@ -1,0 +1,34 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server public --port=5555",
+    "babel": "babel src/app.js --out-file public/js/index.js --source-maps --watch --presets=@babel/preset-env,@babel/preset-react",
+    "dev": "npm run babel & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kbxw/React.git"
+  },
+  "keywords": [],
+  "author": "David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kbxw/React/issues"
+  },
+  "homepage": "https://github.com/Kbxw/React/#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
